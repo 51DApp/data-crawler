@@ -2,9 +2,12 @@ from datetime import datetime, time
 import time
 import logging
 from logging import handlers
-
 from dappradar.get_dapp_data import get_all_eos_dapp_info
-from elasticsearch.es_client import init_es_client
+from es_tools.es_client import init_es_client
+
+import sys
+
+sys.path.append("..")
 
 # 初始化logger
 logger = logging.getLogger()
